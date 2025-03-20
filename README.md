@@ -85,7 +85,7 @@ please organize them as follows:
 
 ## How to test the baseline model?
 
-1. `git clone https://github.com/Amazingren/NTIRE2025_ESR.git`
+1. `git clone https://github.com/andypinxinliu/NTIRE2025_ESR.git`
 2. Select the model you would like to test from [`run.sh`](./run.sh)
     ```bash
     CUDA_VISIBLE_DEVICES=0 python test_demo.py --data_dir [path to your data dir] --save_dir [path to your save dir] --model_id 0
