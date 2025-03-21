@@ -17,7 +17,7 @@ def select_model(model_id, device):
         # ESRNet model
         from models.team38_ESRNet import ESRNet
         model_path = os.path.join('model_zoo', 'team38_ESRNet.pth')
-        model = ESRNet(3, 3, upscale=4, feature_channels=26)
+        model = ESRNet(3, 3, upscale=4, feature_channels=28)
         data_range = 1.0
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")

@@ -33,7 +33,7 @@ def select_model(args, device):
         from models.team38_ESRNet import ESRNet
         name, data_range = f"{model_id:02}_ESRNet", 1.0
         model_path = os.path.join('model_zoo', 'team38_ESRNet.pth')
-        model = ESRNet(3, 3, upscale=4, feature_channels=26)
+        model = ESRNet(3, 3, upscale=4, feature_channels=28)
         model.load_state_dict(torch.load(model_path), strict=True)
 
     else:
